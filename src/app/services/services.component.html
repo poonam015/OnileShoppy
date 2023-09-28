@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+
+  <h1>Services Page</h1>
+
+
+  <table class="table table-striped">
+    <tr>
+      <th>Author ID</th>
+      <th>Author Name</th>
+      <th>Author Quotes</th>
+    </tr>
+    <tr *ngFor="let Author of AuthorList">
+
+      <td>{{Author.AuthorID}}</td>
+      <td>{{Author.AuthorName}}</td>
+      <td>{{Author.AuthorQuote}}</td>
+      <td><img [src]="Author.imgurl" height="100" width="100"></td>
+
+    </tr>
+  </table>
+
+  <!--
+  <table class="table table-striped">
+    <tr>
+      <th>Student Id</th>
+      <th>Student Name</th>
+      <th>Student Class</th>
+      <th>Student Address</th>
+    </tr>
+    <tr *ngFor="let Student of StudentList">
+
+      <td>{{Student.StudentID}}</td>
+      <td>{{Student.StudentName}}</td>
+      <td>{{Student.StudentClass}}</td>
+      <td>{{Student.StudentAddress}}</td>
+      <td><img [src]="Student.imgurl" height="100" width="100"></td>
+
+    </tr>
+  </table>
+
+  <br><br><br>
+
+  
+        <h3>Data Science</h3>
+        <img src="https://media.licdn.com/dms/image/D4D22AQHV3pG70hmZtg/feedshare-shrink_480/0/1688697763812?e=1692230400&v=beta&t=LOVv_CrfZ6oTP6mJEoOl91hm9YZ2VNwgkhF8aa-Hluc" height="300" width="300"><br><br><br>
+        
+        <h3>Cyber Security</h3>
+        <img src="https://media.licdn.com/dms/image/D4D22AQFkfPrNUpP90A/feedshare-shrink_1280/0/1683101382419?e=1692230400&v=beta&t=qnlXiXbARCH-m95V7r4nQw_xnqtz-CwB_N0DzE6BHMg" height="300" width="300"><br><br><br>
+
+        <h3>Java Full Stack</h3>
+        <img src="https://media.licdn.com/dms/image/C4D22AQGmqdyM9HMZxQ/feedshare-shrink_480/0/1669118365962?e=1692230400&v=beta&t=GYvDe5E2Rg1RGwRvVhLwFGevxLnmKXR8ZeN9e8xW4xs" height="300" width="300"><br><br><br>
+   
+-->

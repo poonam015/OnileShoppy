@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+  <h1>About Page</h1>
+
+
+    <input type="text" [(ngModel)]="num1">
+
+
+    <div *ngIf="num1%2==0;else elseblock">
+      <h3>{{num1}} Is Even Number</h3>
+    </div>
+    <ng-template #elseblock>
+      <h3>{{num1}} Is Odd Number</h3>
+    </ng-template>
+            

@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    <tr *ngFor="let users of userslist">
+        <td>{{users.id}}</td>
+        <td>{{users.name}}</td>
+        <td>{{users.email}}</td>
+        <td>{{users.phone}}</td>
+
+    </tr>
+</table>

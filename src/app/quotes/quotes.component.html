@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+
+<h1>Quotes</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let quote of quoteslist">
+            <div class="card">
+                <div class="card-header">
+                    <h1>{{quote.id}}</h1>
+                </div>
+                <div class="card-body">
+                    <img [src]="quote.imgurl" class="img-fluid">
+                    <div class="alert alert-success">
+                        <p>{{quote.quote}}</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p>{{quote.author}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

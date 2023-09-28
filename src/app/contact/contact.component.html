@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+
+  <h1>Contact Page</h1>
+
+
+<!---- <div *ngFor="let i of arr">
+    <div [ngStyle]="i%2==0 ? {'color':'green'} : {'color':'red'}">
+        <h1>{{i}}</h1>
+    </div>
+</div>
+-->
+
+    <div *ngFor="let i of arr">
+
+        <div  [ngClass]="i%2==0 ? 'style1' : 'style2'">
+            <h1>{{i}}</h1>
+
+        </div>
+    </div>
+
+
+    <!--
+<br><br><br>
+  
+  <div>
+    <div>
+        <dl>
+            <dt>
+            <dt>website</dt>
+            <dd>www.mctalentunt.com</dd>
+        </dl>
+    </div>
+    <div class="maps">
+        <h4>Location</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7012.193168659486!2d77.08430814112023!3d28.50674170293442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19453f470d2f%3A0xf57f9b95e62faad5!2sMC%20Talent%20Hunt!5e0!3m2!1sen!2sin!4v1688739112970!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+-->
